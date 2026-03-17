@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html >
+<body>
+    <div class="login">
+        <h1>FWI Prediction</h1>
+        <form action="{{url_for('predict_datapoint')}}" method="post">
+            <input type="text" name="Temperature" placeholder="Temperature" required><br>
+            <input type="text" name="RH" placeholder="Relative Humidity" required><br>
+            <input type="text" name="Ws" placeholder="Wind Speed" required><br>
+            <input type="text" name="Rain" placeholder="Rainfall" required><br>
+            <input type="text" name="FFMC" placeholder="Fine Fuel Moisture Code" required><br>
+            <input type="text" name="DMC" placeholder="Duff Moisture Code" required><br>
+            <input type="text" name="DC" placeholder="Drought Code" required><br>
+            <input type="text" name="ISI" placeholder="Initial Spread Index" required><br>
+            <input type="text" name="BUI" placeholder="Buildup Index" required><br>
+
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+
+        <h2>
+            The predicted FWI value is: {{results}}
+        </h2>
+    </div>
+</body>
+</html>

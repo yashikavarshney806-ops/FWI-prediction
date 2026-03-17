@@ -1,0 +1,30 @@
+# Data files
+algebria.zip
+Cleaned_algebria
+expenses.csv
+height-weight.csv
+
+# Unrelated files
+expense_tracker.py
+Assistant.py
+
+# Virtual environment
+.venv/
+.venv-1/
+
+# Python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
